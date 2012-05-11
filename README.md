@@ -59,3 +59,4 @@ You can specify a list of plugins and/or themes to automatically when the VM com
     # Include the list of themes you'd like installed
     'org_themes' => [],
 
+Unlike the mount points, you don't have to restart the VM if you add plugins or themes, just trigger a chef run with `vagrant provision`
