@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'apt'
+cookbook 'subversion'
+
+# Install from github for library fix 
+# https://github.com/opscode-cookbooks/windows/commit/baafddda3f24c0c74d5999bfa2e0812b10ac58dd
+cookbook 'windows',
+  :git => 'https://github.com/opscode-cookbooks/windows'
+
+# We'll use the latest and greatest branch
+cookbook 'wordpress',
+  :git => 'https://github.com/lewg/chef-wordpress',
+  :ref => 'all-the-things'
+
+# cookbook 'chef-client'
+
+# cookbook 'apache2', '>= 1.0.0'
+
+# cookbook 'rvm',
+#   :git => 'https://github.com/fnichol/chef-rvm'
+
+# cookbook 'postgresql',
+#   :git => 'https://github.com/findsyou/cookbooks',
+#   :ref => 'postgresql-improvements'
