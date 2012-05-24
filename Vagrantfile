@@ -37,10 +37,10 @@ Vagrant::Config.run do |config|
   # config.vm.share_folder "v-data", "/vagrant_data", "../data"
 
   # Example Theme Mount
-  # config.vm.share_folder "my-theme", "/var/www/wordress/wp-content/themes/my-theme"
+  # config.vm.share_folder "my-theme", "/var/www/wordress/wp-content/themes/my-theme", "~/my-theme"
 
   # Example Plugin
-  # config.vm.share_folder "my-plugin", "/var/www/wordpress/wp-content/plugins/my-plugin"
+  # config.vm.share_folder "my-plugin", "/var/www/wordpress/wp-content/plugins/my-plugin", "~/my-plugin"
 
   # Enable provisioning with Puppet stand alone.  Puppet manifests
   # are contained in a directory path relative to this Vagrantfile.
