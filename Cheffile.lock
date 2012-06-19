@@ -3,10 +3,11 @@ SITE
   specs:
     apache2 (1.1.8)
     apt (1.4.2)
-    build-essential (1.0.0)
+    build-essential (1.0.2)
     chef_handler (1.0.6)
-    mysql (1.2.4)
+    mysql (1.2.6)
       openssl (>= 0.0.0)
+      windows (>= 0.0.0)
     openssl (1.0.0)
     php (1.0.2)
       build-essential (>= 0.0.0)
@@ -15,29 +16,31 @@ SITE
     subversion (1.0.0)
       apache2 (>= 0.0.0)
       windows (>= 0.0.0)
-    xml (1.0.2)
+    xml (1.0.4)
 
 GIT
   remote: https://github.com/lewg/chef-wordpress
   ref: all-the-things
-  sha: 3b513977c05b3db84932d882fc6879f713ff1c78
+  sha: 215ea9b0e79f43f32c6fffa97955528876738d5c
   specs:
     wordpress (0.8.8)
       apache2 (>= 0.99.4)
       mysql (>= 1.0.5)
       openssl (>= 0.0.0)
       php (>= 0.0.0)
+      subversion (>= 0.0.0)
 
 GIT
   remote: https://github.com/opscode-cookbooks/windows
   ref: master
-  sha: 924e460f33620c7da5f72e27ef144da75d943437
+  sha: 2474490602c570156b79cd2c003d1412dff4d576
   specs:
-    windows (1.2.12)
+    windows (1.3.0)
       chef_handler (>= 0.0.0)
 
 DEPENDENCIES
   apt (>= 0)
+  build-essential (>= 0)
   subversion (>= 0)
   windows (>= 0)
   wordpress (>= 0)

@@ -94,9 +94,21 @@ Vagrant::Config.run do |config|
       },
       "wordpress" => {
         # Include the list of plugins you'd like installed
-        "org_plugins" => [ 'Debug Bar' ],
+        "org_plugins" => {
+          'Debug Bar' => {},
+          #'Bit.ly Service' => {
+          #  'path' => 'bitly-service',
+          #  'tag' => 'trunk'
+          #}
+        },
         # Include the list of themes you'd like installed
-        'org_themes' => [],
+        'org_themes' => {
+          #'Toolbox' => {},
+          #'Pagelines' => {
+          #  'path' => 'pagelines',
+          #  'tag' => '1.1.3'
+          #}
+        },
         'version' => 'latest'
       }
     }
